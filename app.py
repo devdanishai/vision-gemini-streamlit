@@ -18,7 +18,7 @@ else:
     genai.configure(api_key=GOOGLE_API_KEY)
 
     # Streamlit app
-    st.title("Image Analyzer")
+    st.title("🖼️ Image Analyzer 🔎")
 
     # Sidebar with use cases
     st.sidebar.title("Use Cases")
