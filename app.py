@@ -20,6 +20,28 @@ else:
     # Streamlit app
     st.title("Image Analyzer")
 
+    # Sidebar with use cases
+    st.sidebar.title("Use Cases")
+    use_cases = [
+        "Object Detection and Recognition",
+        "Image Classification",
+        "Facial Recognition and Analysis",
+        "Scene Understanding",
+        "Anomaly Detection",
+        "Content Moderation",
+        "Image Search and Retrieval",
+        "Medical Imaging Analysis",
+        "Augmented Reality Integration",
+        "Quality Control in Manufacturing",
+        "Environmental Monitoring",
+        "Optical Character Recognition (OCR)",
+        "Traffic Monitoring and Analysis",
+        "Product Recommendation Systems",
+        "Sentiment Analysis through Images",
+    ]
+    for use_case in use_cases:
+        st.sidebar.write(f"- {use_case}")
+
     # File uploader for one image
     uploaded_image = st.file_uploader("Upload an Image", type=["png", "jpg", "jpeg"])
 
